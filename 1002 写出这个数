@@ -1,0 +1,11 @@
+n=input()
+list1 = list(n)
+s=0
+for i in range(len(list1)):
+    s=s+int(list1[i])
+list2=list(str(s))
+d=["ling","yi","er","san","si","wu","liu","qi","ba","jiu"]
+for i in range(len(list2)):
+   print(d[int(list2[i])],end='')
+   if i<len(list2)-1:
+      print(end=' ')
