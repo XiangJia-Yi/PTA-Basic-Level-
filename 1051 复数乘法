@@ -1,0 +1,13 @@
+import math
+a,b,c,d = input().split()
+a = float(a)
+b = float(b)
+c = float(c)
+d = float(d)
+A=a*math.cos(b)
+B=a*math.sin(b)
+C=c*math.cos(d)
+D=c*math.sin(d)
+x_1 =round(A*C-B*D,2)
+x_2 =round(B*C+A*D,2)
+print(str(x_1) + str(x_2)+"i")
