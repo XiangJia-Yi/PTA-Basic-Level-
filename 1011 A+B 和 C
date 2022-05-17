@@ -1,0 +1,9 @@
+lines = int(input())
+q=[]
+for i in range (lines):
+    q.append(list(map(int,input().split())))
+for i in range (lines):
+    if q[i][0] + q[i][1] > q[i][2]:
+        print('Case #{}: true'.format(i+1))
+    else:
+        print('Case #{}: false'.format(i+1))
