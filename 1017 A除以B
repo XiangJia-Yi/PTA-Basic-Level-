@@ -1,0 +1,4 @@
+A,B = input().split()
+Q = int(A) // int(B)
+R = int(A) % int(B)
+print(Q,R)
