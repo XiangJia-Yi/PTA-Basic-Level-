@@ -1,0 +1,20 @@
+a,DA,b,DB=input().split()
+A = list(a)
+B = list(b)
+i=0
+s=0
+for x in A:
+    if x == DA:
+        i = i+1
+for k in range(0,i):
+    s = s+10**(k)
+PA=int(DA) * s
+o=0
+u=0
+for x in B:
+    if x == DB:
+        o = o+1
+for k in range(0,o):
+    u = u+10**(k)
+PB=int(DB) * u
+print(PA+PB)
