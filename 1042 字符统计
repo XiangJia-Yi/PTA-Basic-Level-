@@ -1,0 +1,24 @@
+def gettex():
+   txt = input()
+   txt = txt.lower()
+   for ch in '!"#$&%()*+,-./;:<>=?@[\\]^{|}~':
+      txt = txt.replace(ch," ")
+   return txt
+list2=list(gettex())
+s = ''
+s1 = ''
+for i in list2:
+      s = s + i
+      if len(s) % 2 == 0:
+         s1 += s[-2:] + ' '
+      else:
+         pass
+words=s1
+counts={}
+for word in words:
+   counts[word]=counts.get(word,0)+1
+items=list(counts.items())
+items.sort(key=lambda x:(-x[1],x[0]),reverse=False)
+words,count = items[1]
+print(words,count)
+   
