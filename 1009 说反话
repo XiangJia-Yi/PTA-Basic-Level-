@@ -1,0 +1,4 @@
+words = input().split()
+list1 = list(words)
+list2 = list1[::-1]
+print(' '.join(list2))
